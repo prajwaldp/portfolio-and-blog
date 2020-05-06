@@ -165,7 +165,7 @@ const ProjectCard = ({ projectData }) => {
   ))
 
   let links = projectData.links.map((e, i) => (
-    <span key={i} className="inline-block mr-4 underline text-blue-500"><a href={e.href} target="_blank">{e.text}</a></span>
+    <span key={i} className="inline-block mr-4 underline text-blue-500"><a href={e.href} target="_blank" rel="noopener noreferrer">{e.text}</a></span>
   ))
 
   let technologies = projectData.technologies.map((e, i) => (
