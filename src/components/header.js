@@ -7,13 +7,20 @@ const Header = ({ siteTitle }) => {
 
   const [navbarStatus, setNavbarStatus] = useState(0)
 
-  window.addEventListener('scroll', (event) => {
-    if (window.pageYOffset > 10) {
-      setNavbarStatus(true)
-    } else {
-      setNavbarStatus(false)
-    }
-  })
+  /*
+  window is undefined when `gatsby build` is run
+  This is a common issue with server side rendering as window is not
+  defined in Node.js
+  */
+  if (typeof window !== undefined) {
+    window.addEventListener('scroll', (event) => {
+      if (window.pageYOffset > 10) {
+        setNavbarStatus(true)
+      } else {
+        setNavbarStatus(false)
+      }
+    })
+  }
 
   let displayClass = navbarStatus ? 'opacity-100 visible' : 'opacity-0 invisible'
 
