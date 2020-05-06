@@ -12,7 +12,7 @@ const Header = ({ siteTitle }) => {
   This is a common issue with server side rendering as window is not
   defined in Node.js
   */
-  if (typeof window !== undefined) {
+  if (typeof window !== 'undefined') {
     window.addEventListener('scroll', (event) => {
       if (window.pageYOffset > 10) {
         setNavbarStatus(true)
