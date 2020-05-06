@@ -1,6 +1,7 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React, { useState } from "react"
+import { Link } from 'gatsby'
+import PropTypes from 'prop-types'
+import React, { useState } from 'react'
+import SocialLinks from './social-links'
 
 const Header = ({ siteTitle }) => {
 
@@ -18,7 +19,7 @@ const Header = ({ siteTitle }) => {
 
   return (
     <header
-      className={`shadow mb-2 px-10 py-3 transition-opacity bg-white w-full fixed ${displayClass}`}
+      className={`shadow mb-2 px-10 py-3 transition-opacity bg-white w-full fixed flex flex-row justify-between items-center ${displayClass}`}
       style={{
         transition: `opacity .3s`
       }}
@@ -32,6 +33,9 @@ const Header = ({ siteTitle }) => {
             {siteTitle}
           </Link>
         </h1>
+      </div>
+      <div>
+        <SocialLinks maxWidth="2rem" />
       </div>
     </header>
   )

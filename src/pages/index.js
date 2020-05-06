@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Projects from "../components/projects"
+import SocialLinks from "../components/social-links"
 
 const IndexPage = () => (
   <Layout>
@@ -15,8 +16,8 @@ const IndexPage = () => (
         <p className="text-3xl text-gray-600 mt-5 tracking-tighter">
           I'm a programmer, student, and software designer.
         </p>
-        <div>
-          {/* GitHub and LinkedIn here */}
+        <div className="block mt-10">
+          <SocialLinks maxWidth="3rem" />
         </div>
       </div>
       <div className="mt-20 px-8">
