@@ -2,8 +2,33 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-@import url('https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;700&display=swap");
 
 * {
-  font-family: 'Muli', sans-serif;
+  font-family: "Muli", sans-serif;
+}
+
+.blog-article h1,
+.blog-article h2,
+.blog-article h3,
+.blog-article p {
+  margin-bottom: 1rem;
+}
+
+.blog-article h1,
+.blog-article h2,
+.blog-article h3 {
+  font-weight: bold;
+}
+
+.blog-article blockquote {
+  font-style: italic;
+}
+
+.blog-article pre {
+  display: block;
+  background-color: #252525;
+  padding: 5px;
+  margin-bottom: 1rem;
+  color: #e6e6e6;
 }
