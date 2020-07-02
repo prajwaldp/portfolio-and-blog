@@ -8,7 +8,7 @@ const data = [
     title: "The Ambient Game Engine",
     description: `An engine developed from scratch to build cross-platform 2D and 3D
     applications and games, with a powerful Rendering API, an Entity-Component System,
-    a Physics Engine for Collision Detection, and a Network Manager for multiplayer support.`,
+    a Physics Engine for Collision Detection, and a Network Manager for multiplayer support`,
 
     image: "2d-platformer.gif",
 
@@ -27,7 +27,8 @@ const data = [
     featured: true,
     title: "The Blockchain Algorithm (in Rust)",
     description: `Implementation of the blockchain algorithm from the Bitcoin
-    whitepaper, and simulation through concurrent independent actors.`,
+    whitepaper, simulation through concurrent independent actors, and a web-app
+    that shows the network in real-time`,
 
     image: "blockchain.png",
 
@@ -47,7 +48,7 @@ const data = [
     title:
       "Colorization of Grayscale Images using Generative Adversarial Networks",
     description: `A Generative Adversarial Neural Network model based on the Pix2Pix model,
-    trained on the CIFAR-10 image dataset to generate the colorized version of a grayscale image.`,
+    trained on the CIFAR-10 image dataset, to generate the colorized version of a grayscale image`,
 
     image: "gan-colorizer.png",
 
@@ -84,16 +85,19 @@ const ProjectCard = ({ projectData, idx }) => {
   return (
     <div
       className={`w-full mt-10 p-3 shadow text-gray-400 flex flex-row rounded ${
-        idx % 2 == 1 ? "flex-row-reverse" : ""
+        idx % 2 === 1 ? "flex-row-reverse" : ""
       }`}
     >
-      {projectData.image && (
-        <div className="w-1/2 px-2">
-          <img src={projectData.image} className="w-full rounded-lg" />
-        </div>
-      )}
+      <div className="w-1/2 px-2 h-full align-middle">
+        <img
+          src={projectData.image}
+          className="max-w-full rounded-lg mx-auto"
+          width="400px"
+          alt={projectData.title}
+        />
+      </div>
 
-      <div className="w-1/2 px-2">
+      <div className="w-1/2 px-2 h-full align-middle">
         {projectData.featured && (
           <p className="text-green-500 uppercase tracking-wide text-xs">
             Featured

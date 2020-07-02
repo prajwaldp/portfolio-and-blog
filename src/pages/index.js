@@ -79,7 +79,10 @@ const IndexPage = () => {
             </p>
             <p className="text-lg text-gray-600 mt-5">
               Connect with me on{" "}
-              <a className="text-blue-500" href="https://github.com/prajwaldp">
+              <a
+                className="text-blue-500"
+                href="https://www.linkedin.com/in/prajwal-d-prakash/"
+              >
                 LinkedIn
               </a>
               ,
@@ -153,16 +156,17 @@ const IndexPage = () => {
             <h1 className="text-center font-bold uppercase tracking-wider text-gray-500 border-t-4 border-gray-800 pt-5">
               Get in Touch
             </h1>
+
             <div class="flex flex-row justify-around text-3xl text-blue-500 p-10">
               <a href="https://github.com/prajwaldp">
                 <FontAwesomeIcon icon={faGithub} />
               </a>
 
-              <a href="https://github.com/prajwaldp">
+              <a href="https://www.linkedin.com/in/prajwal-d-prakash/">
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
 
-              <a href="https://github.com/prajwaldp">
+              <a href="https://www.instagram.com/prajwaldp/">
                 <FontAwesomeIcon icon={faInstagram} />
               </a>
             </div>

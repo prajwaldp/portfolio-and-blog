@@ -26,7 +26,8 @@ const data = [
   {
     title: "Distributed Microblogging Website Engine",
     description: `A distributed engine for a twitter-like application with Phoenix and Elixir.
-    Simulated its performance with varying number of concurrent connections`,
+    And a simulations of its performance with varying number of concurrent connections using
+    concurrent actors as independent nodes`,
     links: [
       {
         icon: faGithub,
@@ -52,7 +53,7 @@ const data = [
     description: `An analysis of the Human Resources dataset from Kaggle, using statistical modelling
       to verify its authenticity, and hypothesis testing to determine the correlation between
       the metrics measured. Built a decision tree classifier to predict which employees would
-      leave with an accuracy of 96%.`,
+      leave with an accuracy of 96%`,
     links: [
       {
         icon: faPython,
@@ -69,7 +70,7 @@ const data = [
     title: "Software Fault Prediction with Neural Networks",
     description: `A neural network with Keras/TensorFlow that used object-oriented
     metrics to predict software faults with a 10-fold cross-validation accuracy of
-    84.36% and a ROC AUC of 0.8.`,
+    84.36% and a ROC AUC of 0.8`,
 
     links: [
       {
@@ -91,7 +92,7 @@ const data = [
 
   {
     title: "Gossip Protocol Simulation",
-    description: `Implemented and simulated the Gossip Protocol for data dissemination
+    description: `Implementaions and simulation of the Gossip Protocol for data dissemination
     in a distributed system. Also implemented distributed averaging (push-sum) using
     the Gossip protocol`,
     links: [
@@ -108,8 +109,8 @@ const data = [
   {
     title: "Distributed Hash Table",
     description: `Implementation of a distributed hash table on a
-    peer-to-peer overlay network using Tapestry Routing. Simulated its performance
-    varying the load and network size`,
+    peer-to-peer overlay network using Tapestry Routing, and a simulation of its
+    performance using concurrent actors as independent nodes`,
 
     links: [
       {
@@ -126,7 +127,10 @@ const data = [
   {
     title: "Terrain Mapping with Swarm Intelligence",
     description: `Built 3 robots that used swam intelligence principles
-    such as swarm dispersion to cooperatively generate the map of an unknown environment.`,
+    such as swarm dispersion to cooperatively generate the map of an unknown environment
+    using the a Computer Vision Simultaneous Localization and Mapping algorithm called
+    ORB-SLAM2`,
+
     links: [
       {
         icon: faGithub,
@@ -255,7 +259,7 @@ const ProjectCard = ({ projectData }) => {
       <div className="flex flex-col justify-between bg-blue-900 rounded-sm mt-2 shadow text-gray-300 p-2 h-full">
         <div>
           <h3 className="text-gray-300 text-xl p-2">{projectData.title}</h3>
-          <div className="p-2 text-gray-500 text-md">
+          <div className="p-2 text-gray-500 text-sm">
             {projectData.description}
           </div>
         </div>
